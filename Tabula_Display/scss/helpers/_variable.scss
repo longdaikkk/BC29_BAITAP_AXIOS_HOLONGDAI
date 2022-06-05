@@ -1,0 +1,30 @@
+$color-pink: #b61984;
+$color-black: black;
+$color-white: white;
+
+$bg-none: rgba(0, 0, 0, 0);
+$bg-pink: #aa017e;
+
+$fs-icon: 1.25rem;
+$fs-nav: 14px;
+$fs-p: 1.1rem;
+$fs-h1: 3.8rem;
+$fs-h3: 2.5rem;
+$fs-h4: 1.55rem;
+$fs-p0: 0.75rem;
+
+$fw-1: 400;
+$fw-2: 500;
+$fw-3: 600;
+$fw-4: 700;
+
+$breakpoints: (
+    "extra-large": 1200px,
+    "large": 992px,
+    "medium": 768px,
+    "small": 576px,
+    "extra-large-down": 1199.98px,
+    "large-down": 991.98px,
+    "medium-down": 767.98px,
+    "small-down": 575.98px,
+);

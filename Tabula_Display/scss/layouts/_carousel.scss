@@ -1,0 +1,21 @@
+#carousel{
+    padding: 100px 0;
+    position: relative;
+    .carousel_content{
+        p{
+            @include styleText($color-pink, $fs-p, $fw-3);
+        }
+
+        h1{
+            @include styleText($color-black, $fs-h1, $fw-4);
+        }
+    }
+}
+
+@include responsive("medium-down") {
+    #carousel{
+        h1{
+            font-size: $fs-h3 !important;
+        }
+    }
+}

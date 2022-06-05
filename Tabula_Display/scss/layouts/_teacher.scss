@@ -1,0 +1,49 @@
+#teacher {
+    background-color: #dcd1f0;
+    position: relative;
+
+    .card {
+        z-index: 1;
+        border: none;
+        padding: 0 10px;
+        margin: 10px 0;
+        background-color: #dcd1f000;
+
+        .card_item {
+            background-color: $color-white;
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.5s;
+            .card-body {
+                .card-country {
+                    @include styleText($color-pink, $fs-p0, $fw-2);
+                }
+
+                .card-title {
+                    @include styleText($color-black, $fs-h4, $fw-4);
+                }
+
+                .card-text {
+                    @include styleText($color-black, 15px, $fw-1);
+                }
+            }
+
+            .card_img{
+                overflow: hidden;
+                img{
+                    transition: all 1.2s;
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            &:hover{
+                box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.267);
+            }
+            
+        }
+    }
+}

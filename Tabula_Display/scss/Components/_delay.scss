@@ -1,0 +1,6 @@
+
+@for $size from 1 to 4 {
+    .delay-#{$size}{
+        animation-delay: $size*0.5s;
+    }
+}

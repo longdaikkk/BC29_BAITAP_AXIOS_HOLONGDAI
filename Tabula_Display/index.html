@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .loader {
+          border: 16px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 16px solid #b61984;
+          width: 120px;
+          height: 120px;
+          -webkit-animation: spin 2s linear infinite; /* Safari */
+          animation: spin 2s linear infinite;
+          z-index: 3;
+        }
+        
+        /* Safari */
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        </style>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark container animate__animated animate__fadeIn">
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler nav-responsive" type="button" data-toggle="dropdown">
+                <i class="fa-solid fa-bars fa-2x toggler"></i>
+                <div class="dropdown-menu text-center px-5">
+                    <ul class="list_toggler">
+                        <li class="d-flex align-items-center"><a class="dropdown-item" href="#">Home </a> <i
+                                class="fa-solid fa-angle-down"></i></li>
+                        <li class="d-flex align-items-center"><a class="dropdown-item actives" href="#">About </a> <i
+                                class="fa-solid fa-angle-down"></i></li>
+                        <li class="d-flex align-items-center"><a class="dropdown-item " href="#">About us</a></li>
+                        <li class="d-flex align-items-center"><a class="dropdown-item" href="#">About me</a></li>
+                        <li class="d-flex align-items-center"><a class="dropdown-item actives" href="#">Our Team </a>
+                        </li>
+                        <li class="d-flex align-items-center"><a class="dropdown-item" href="#">History</a></li>
+                        <li class="d-flex align-items-center"><a class="dropdown-item" href="#">Testimonials</a></li>
+                        <li class="d-flex align-items-center"><a class="dropdown-item" href="#">Contact</a></li>
+                        <li class="d-flex align-items-center"><a class="dropdown-item" href="#">Comming Soon</a></li>
+                        <li class="d-flex align-items-center"><a class="dropdown-item" href="#">404</a></li>
+                        <li class="d-flex align-items-center"><a class="dropdown-item" href="#">Courses</a> <i
+                                class="fa-solid fa-angle-down"></i></li>
+                        <li class="d-flex align-items-center"><a class="dropdown-item" href="#">Blog</a> <i
+                                class="fa-solid fa-angle-down"></i></li>
+                        <li class="d-flex align-items-center"><a class="dropdown-item" href="#">Shop</a> <i
+                                class="fa-solid fa-angle-down"></i></li>
+                        <li class="d-flex align-items-center"><a class="dropdown-item" href="#">Elements</a> <i
+                                class="fa-solid fa-angle-down"></i></li>
+                        <li class="d-flex align-items-center nav-item"><a class="nav-phone" href="#"><i
+                                    class="fa-solid fa-phone-flip"></i> (+1) 555 234-8765</a></i></li>
+                        <li class="d-flex align-items-center nav-item">
+                            <a class="nav-icon mx-auto" href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </button>
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="./images/crest.png" alt="">
+            </a>
+
+            <!-- Navbar links -->
+            <div class="collapse ml-auto" style="display: block;">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Elements</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-phone" href="#"><i class="fa-solid fa-phone-flip"></i> (+1) 555 234-8765</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-icon" href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="bg_yellow">
+        <img class="img-fluid" src="./images/yellow_top_wave_01.png" alt="">
+    </div>
+    <!-- carousel -->
+    <section id="carousel">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="carousel_content col-md-12 col-lg-6 animate__animated animate__fadeInLeftBig wow">
+                    <p>About Us</p>
+                    <h1>The language <br> teaching experts</h1>
+                </div>
+                <div class="carousel_img col-md-12 col-lg-6 animate__animated animate__fadeIn delay wow">
+                    <img class="img-fluid" src="./images/hero_team.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bg_wave">
+            <img class="img-fluid" src="./images/Violet_top_left_wave.png" alt="" srcset="">
+        </div>
+    </section>
+
+    <!-- Teacher -->
+    <section id="teacher">
+        <div class="container">
+            <div class="row " id="listTeacher">
+                <div class="loader mx-auto"></div>
+            </div>
+        </div>
+        <div class="bg">
+            <img class="img-fluid" src="./images/Wave_White_bottom_right_shape_01.png" alt="" srcset="">
+        </div>
+    </section>
+
+    <!-- register -->
+    <section id="register">
+        <div class="container">
+            <div class="row">
+                <div class="register_content col-md-12 col-lg-7 animate__fadeInLeftBig animate__animated wow">
+                    <img class="img-fluid" src="./images/conatct_inner.png" alt="">
+                </div>
+                <div class="register_info col-md-12 col-lg-5 animate__fadeIn animate__animated wow">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Find Your Course</h3>
+                            <div class="row">
+                                <div class="col-md-5 d-flex row_1 align-items-center">
+                                    <i class="fa-solid fa-file-signature"></i>
+                                    <input type="text" placeholder="Name">
+                                </div>
+                                <div class="col-md-5 d-flex row_1 align-items-center">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input type="text" placeholder="E-mail">
+                                </div>
+                                <div class=" col-md-12">
+                                    <div class="sel d-flex align-items-center ">
+                                        <i class="fa-solid fa-graduation-cap"></i>
+                                        <select id="select">
+                                            <option value="">English</option>
+                                            <option value="">French</option>
+                                            <option value="">Spanish</option>
+                                            <option value="">German</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="text d-flex">
+                                        <i class="fa-solid fa-message"></i>
+                                        <textarea id="w3review" name="w3review" rows="4" cols="50"
+                                            placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="btn_send col-5">
+                                    <button class="btn">SEND</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg">
+            <img class="img-fluid" src="./images/accent_bottom_wave_01.png" alt="">
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3 animate__fadeIn animate__animated wow">
+                    <h3>Contact us</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Franklin St, Greenpoint Ave</p>
+                    <p><i class="fa-solid fa-phone-flip"></i> +2342 5446 67</p>
+                    <p><i class="fa-solid fa-clock"></i> Monday - Friday: 8 AM - 5 PM</p>
+                    <div class="footer_icon">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 animate__fadeIn animate__animated delay-1 wow">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li>Home</li>
+                        <li>Courses</li>
+                        <li>Schedule</li>
+                        <li>Blog</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 animate__fadeIn animate__animated delay-2 wow">
+                    <h3>About</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Events</li>
+                        <li>Get Quote</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 animate__fadeIn animate__animated delay-3 wow">
+                    <h3>Newsletter</h3>
+                    <input type="text" placeholder="Your email">
+                    <button class="btn_sub">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./src/services/index.js"></script>
+    <script src="./src/scroll.js"></script>
+    <script src="./src/main.js"></script>
+</body>
+
+</html>

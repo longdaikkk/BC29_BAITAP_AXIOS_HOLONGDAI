@@ -1,0 +1,131 @@
+header {
+    transition: all 1s;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+
+    .navbar {
+        transition: all 1s;
+        background-color: $bg-none  !important;
+
+        .navbar-toggler {
+            display: none;
+
+            .list_toggler {
+                li {
+                    margin: 20px 0;
+
+                    .dropdown-item {
+                        @include styleText(gray, $fs-p0, $fw-1);
+                    }
+
+                    .actives {
+                        @include styleText(black, $fs-p0, $fw-3);
+                    }
+                }
+            }
+        }
+
+        .nav-item {
+            .nav-link {
+                @include styleText($color-black, $fs-nav, $fw-2);
+                margin: 0 5px;
+                position: relative;
+                transition: all 0.5s;
+
+                &:hover {
+                    &::after {
+                        height: 5px;
+                        width: 5px;
+                    }
+
+                    color: $color-pink  !important;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background-color: $color-pink;
+                    height: 0px;
+                    width: 0px;
+                    border-radius: 50%;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    transition: 0.2s;
+                }
+            }
+
+            .active {
+                &::after {
+                    height: 5px;
+                    width: 5px;
+                }
+            }
+
+            .nav-phone {
+                @include styleText($color-white, $fs-nav, $fw-1);
+                @include border(30px, $color-white, $color-pink, 10px, 30px);
+                @include noneDecor($color-white);
+                transition: all 0.5s;
+                box-shadow: 0 0 0 3em $color-pink inset;
+                &:hover {
+                    box-shadow: 0 0 0 1px $color-white inset;
+                    color: $color-pink  !important;
+                }
+            }
+
+            .nav-icon {
+                @include noneDecor($color-black);
+
+                i {
+                    margin: 0 5px;
+                    transition: all 0.2s;
+
+                    &:hover {
+                        color: $color-pink;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sticky {
+    background-color: $color-white;
+    opacity: 0.9;
+    .navbar {
+        padding: 0 1rem;
+
+        .navbar-brand {
+            img {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@include responsive("extra-large-down") {
+    header {
+        background-color: white;
+
+        .nav-responsive {
+            display: block !important;
+
+            .toggler {
+                color: $color-pink;
+            }
+        }
+
+        .navbar-brand {
+            img {
+                width: 50%;
+            }
+        }
+
+        .collapse {
+            display: none !important;
+        }
+    }
+}

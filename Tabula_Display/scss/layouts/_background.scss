@@ -1,0 +1,15 @@
+.bg_yellow{
+    @include bg;
+    top: 0;
+}
+
+.bg_wave{
+    @include bg;
+    bottom: 0;
+}
+.bg{
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
